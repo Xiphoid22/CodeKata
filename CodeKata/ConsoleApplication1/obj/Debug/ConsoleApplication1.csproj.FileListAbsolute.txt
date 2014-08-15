@@ -1,0 +1,6 @@
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
