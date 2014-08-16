@@ -1,8 +1,7 @@
-C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\Code Kata.csprojResolveAssemblyReference.cache
-C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
-C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
 C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\nunit.framework.dll
 C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\nunit.framework.xml
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\CodeKata.dll.config
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\CodeKata.dll
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\CodeKata.pdb
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\CodeKata.dll
+C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\CodeKata.pdb
