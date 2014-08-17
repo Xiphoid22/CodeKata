@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class FizzBuzzKata 
+public class FizzBuzzKata : IFizzBuzzKata
 {
     public string Answer(int i)
     {
@@ -9,4 +9,9 @@ public class FizzBuzzKata
         if (i % 5 == 0) { answer += "Buzz"; }
         return answer;
     }
+}
+
+public interface IFizzBuzzKata
+{
+    string Answer(int number);
 }

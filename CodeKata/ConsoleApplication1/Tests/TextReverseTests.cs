@@ -21,19 +21,19 @@ namespace CodeKata.Tests
         [Test]
         public void HelloTest()
         {
-            Assert.AreEqual("hello", reverse.Reverse("olleh"));
+            Assert.AreEqual("hello", reverse.Revert("olleh"));
         }
 
         [Test]
         public void OneCharacterTest()
         {
-            Assert.AreEqual("a", reverse.Reverse("a"));
+            Assert.AreEqual("a", reverse.Revert("a"));
         }
 
         [Test]
         public void EmptyStringTest()
         {
-            Assert.AreEqual("", reverse.Reverse(""));
+            Assert.AreEqual("", reverse.Revert(""));
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodeKata
 {
-    class TeaParty
+    class TeaParty : ITeaPartyKata
     {
         public string Welcome(string lastName, bool isWoman, bool isKnighted)
         {
@@ -40,4 +40,9 @@ namespace CodeKata
             return greeting;
         }
     }
+}
+
+public interface ITeaPartyKata
+{
+    string Welcome(string lastName, bool isWoman, bool isKnighted);
 }

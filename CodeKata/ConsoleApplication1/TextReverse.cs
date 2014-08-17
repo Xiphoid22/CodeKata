@@ -5,15 +5,20 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-    class TextReverse
+class TextReverse : IBackwardsTalkKata
     {
-        public string Reverse(string input)
+        public string Revert(string word)
         {
             string output = "";
-            for (int i = 0; i < input.Length ; i++)
+            for (int i = 0; i < word.Length ; i++)
             {
-                output += input[input.Length - i - 1];
+                output += word[word.Length - i - 1];
             }
             return output;
         }
+    }
+
+    public interface IBackwardsTalkKata
+    {
+        string Revert(string word);
     }
