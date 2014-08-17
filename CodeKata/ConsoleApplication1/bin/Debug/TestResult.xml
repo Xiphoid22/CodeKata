@@ -1,26 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\CodeKata.dll" total="7" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-08-16" time="09:17:42">
+<test-results name="C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\CodeKata.dll" total="11" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2014-08-17" time="09:53:33">
   <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.8009" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Program Files (x86)\NUnit 2.6.3\bin" machine-name="LEE-PC" user="Lee" user-domain="LEE-PC" />
   <culture-info current-culture="en-GB" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\CodeKata.dll" executed="True" result="Success" success="True" time="0.023" asserts="0">
+  <test-suite type="Assembly" name="C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\CodeKata.dll" executed="True" result="Success" success="True" time="0.197" asserts="0">
     <results>
-      <test-suite type="Namespace" name="CodeKata" executed="True" result="Success" success="True" time="0.023" asserts="0">
+      <test-suite type="Namespace" name="CodeKata" executed="True" result="Success" success="True" time="0.178" asserts="0">
         <results>
-          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.022" asserts="0">
+          <test-suite type="Namespace" name="Tests" executed="True" result="Success" success="True" time="0.178" asserts="0">
             <results>
-              <test-suite type="TestFixture" name="FizzBuzzTests" executed="True" result="Success" success="True" time="0.012" asserts="0">
+              <test-suite type="TestFixture" name="FizzBuzzTests" executed="True" result="Success" success="True" time="0.056" asserts="0">
                 <results>
-                  <test-case name="CodeKata.Tests.FizzBuzzTests.BuzzTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-                  <test-case name="CodeKata.Tests.FizzBuzzTests.fizzBuzzTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
-                  <test-case name="CodeKata.Tests.FizzBuzzTests.fizzTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="CodeKata.Tests.FizzBuzzTests.BuzzTest" executed="True" result="Success" success="True" time="0.031" asserts="1" />
+                  <test-case name="CodeKata.Tests.FizzBuzzTests.fizzBuzzTest" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                  <test-case name="CodeKata.Tests.FizzBuzzTests.fizzTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                   <test-case name="CodeKata.Tests.FizzBuzzTests.NotDivisibleTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                 </results>
               </test-suite>
-              <test-suite type="TestFixture" name="TextReverseTests" executed="True" result="Success" success="True" time="0.006" asserts="0">
+              <test-suite type="TestFixture" name="TeaPartyTests" executed="True" result="Success" success="True" time="0.099" asserts="0">
                 <results>
-                  <test-case name="CodeKata.Tests.TextReverseTests.EmptyStringTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
-                  <test-case name="CodeKata.Tests.TextReverseTests.HelloTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                  <test-case name="CodeKata.Tests.TeaPartyTests.LadyTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="CodeKata.Tests.TeaPartyTests.mrTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="CodeKata.Tests.TeaPartyTests.msTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="CodeKata.Tests.TeaPartyTests.sirTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                </results>
+              </test-suite>
+              <test-suite type="TestFixture" name="TextReverseTests" executed="True" result="Success" success="True" time="0.013" asserts="0">
+                <results>
+                  <test-case name="CodeKata.Tests.TextReverseTests.EmptyStringTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                  <test-case name="CodeKata.Tests.TextReverseTests.HelloTest" executed="True" result="Success" success="True" time="0.001" asserts="1" />
                   <test-case name="CodeKata.Tests.TextReverseTests.OneCharacterTest" executed="True" result="Success" success="True" time="0.000" asserts="1" />
                 </results>
               </test-suite>
