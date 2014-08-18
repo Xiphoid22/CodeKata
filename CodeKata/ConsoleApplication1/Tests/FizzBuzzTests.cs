@@ -33,7 +33,7 @@ namespace CodeKata.Tests
         [Test]
         public void fizzBuzzTest()
         {
-            Assert.AreEqual("FizzBuzz", fizzBuzz.Answer(15));
+            Assert.AreEqual("Fizz Buzz", fizzBuzz.Answer(15));
         }
 
         [Test]

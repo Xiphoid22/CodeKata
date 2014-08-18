@@ -47,9 +47,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NasaCountdownKata.cs" />
     <Compile Include="FizzBuzz.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TeaParty.cs" />
+    <Compile Include="Tests\NasaCountdownTests.cs" />
     <Compile Include="Tests\TeaPartyTests.cs" />
     <Compile Include="Tests\TextReverseTests.cs" />
     <Compile Include="Tests\FizzBuzzTests.cs" />
