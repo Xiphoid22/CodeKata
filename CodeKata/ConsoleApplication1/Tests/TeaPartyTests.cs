@@ -41,6 +41,5 @@ namespace CodeKata.Tests
         {
             Assert.AreEqual("Hello Lady Akatsuki", teaParty.Welcome("Akatsuki", true, true));
         }
-
     }
 }

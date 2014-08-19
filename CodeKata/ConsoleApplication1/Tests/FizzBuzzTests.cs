@@ -41,6 +41,5 @@ namespace CodeKata.Tests
         {
             Assert.AreEqual("", fizzBuzz.Answer(7));
         }
-
     }
 }

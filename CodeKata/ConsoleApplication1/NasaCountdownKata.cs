@@ -9,7 +9,6 @@ public class NasaCountdownKata : INasaCountdownKata
         {
             countdown[i] = start - i;
         }
-
         return countdown;
     }
 }

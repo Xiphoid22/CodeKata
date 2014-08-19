@@ -29,7 +29,6 @@ namespace CodeKata
                 if (isKnighted == false)
                 {
                     title = "Ms.";
-
                 }
                 else
                 {
