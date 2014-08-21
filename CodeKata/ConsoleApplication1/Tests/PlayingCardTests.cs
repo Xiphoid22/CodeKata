@@ -38,5 +38,14 @@ namespace CodeKata.Tests
             var deck = cards.CreateDeck();
             Assert.IsTrue(deck[0].GetValue() == "Ace");
         }
+
+        [Test]
+        public void shuffleDeck()
+        {
+            var deck = cards.CreateDeck();
+            var originalDeck = cards.CreateDeck();
+            var shuffledDeck = cards.ShuffleDeck(deck);
+            Assert.IsTrue(originalDeck[0].GetValue() != shuffledDeck[0].GetValue());
+        }
     }
 }

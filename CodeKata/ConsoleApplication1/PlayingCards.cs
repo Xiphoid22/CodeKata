@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace CodeKata
 {
@@ -25,9 +27,20 @@ namespace CodeKata
             return deck;
         }
 
-        public void ShuffleDeck(string[] deck)
+        public List<Card> ShuffleDeck(List<Card> deck)
         {
-            throw new NotImplementedException();
+            var random = new Random();
+            var shuffledDeck = new List<Card>();
+            var deckSize = deck.Count;
+
+            for (var i = 0; i < deckSize; i++)
+            {
+                var randomNumber = random.Next(0, deck.Count-1);
+                shuffledDeck.Add(deck[randomNumber]);
+                deck.RemoveAt(randomNumber);
+            }
+
+            return shuffledDeck;
         }
 
         public List<Card> CreateHand(List<Card> deck)
