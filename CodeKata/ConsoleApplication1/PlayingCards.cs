@@ -27,7 +27,7 @@ namespace CodeKata
             return deck;
         }
 
-        public List<Card> ShuffleDeck(List<Card> deck)
+        public void  ShuffleDeck(List<Card> deck)
         {
             var random = new Random();
             var shuffledDeck = new List<Card>();
@@ -40,13 +40,23 @@ namespace CodeKata
                 deck.RemoveAt(randomNumber);
             }
 
-            return shuffledDeck;
+            for (var i = 0; i < deckSize; i++)
+            {
+                deck.Add(shuffledDeck[i]);
+            }
         }
 
-        public List<Card> CreateHand(List<Card> deck)
+        public List<Card> DealToPlayers(List<Card> deck, int numberOfPlayers)
         {
             throw new NotImplementedException();
         }
+
+        public Card TakeCard(List<Card> deck)
+        {
+            throw new NotImplementedException();
+        }
+
+
     }
 
     public class Card

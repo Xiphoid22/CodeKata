@@ -44,8 +44,8 @@ namespace CodeKata.Tests
         {
             var deck = cards.CreateDeck();
             var originalDeck = cards.CreateDeck();
-            var shuffledDeck = cards.ShuffleDeck(deck);
-            Assert.IsTrue(originalDeck[0].GetValue() != shuffledDeck[0].GetValue());
+            cards.ShuffleDeck(deck);
+            Assert.IsTrue(originalDeck[0].GetValue() != deck[0].GetValue());
         }
     }
 }
