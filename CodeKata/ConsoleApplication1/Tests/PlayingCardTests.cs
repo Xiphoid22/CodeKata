@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
@@ -10,42 +11,40 @@ namespace CodeKata.Tests
     [TestFixture]
     internal class PlayingCardTests
     {
-        private PlayingCards cards;
-
+        private PlayingCards _cards;
+        private List<Card> _deck;
+ 
         [TestFixtureSetUp]
         public void init()
         {
-            cards = new PlayingCards();
+            _cards = new PlayingCards();
+            _deck = _cards.CreateDeck();
         }
 
         [Test]
         public void CreateDeckTest()
         {
-            var deck = cards.CreateDeck();
-            Assert.IsTrue(deck.Count == 52);
+            Assert.IsTrue(_deck.Count == 52);
         }
 
         [Test]
         public void CheckSuit()
         {
-            var deck = cards.CreateDeck();
-            Assert.IsTrue(deck[0].GetSuit() == "Spades");
+            Assert.IsTrue(_deck[0].GetSuit() == "Spades");
         }
 
         [Test]
         public void CheckValue()
         {
-            var deck = cards.CreateDeck();
-            Assert.IsTrue(deck[0].GetValue() == "Ace");
+            Assert.IsTrue(_deck[0].GetValue() == "Ace");
         }
 
         [Test]
-        public void shuffleDeck()
+        public void ShuffleDeck()
         {
-            var deck = cards.CreateDeck();
-            var originalDeck = cards.CreateDeck();
-            cards.ShuffleDeck(deck);
-            Assert.IsTrue(originalDeck[0].GetValue() != deck[0].GetValue());
+            var originalDeck = _cards.CreateDeck();
+            _cards.ShuffleDeck(_deck);
+            Assert.IsTrue(originalDeck[0].GetValue() != _deck[0].GetValue());
         }
     }
 }
