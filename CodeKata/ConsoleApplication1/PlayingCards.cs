@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
 
 namespace CodeKata
 {
@@ -16,13 +12,9 @@ namespace CodeKata
             var value = new string[13] {"Ace","2","3","4","5","6","7","8","9","10","Jack","Queen","King"};
             var deck = new List<Card>();
 
-            for (var i = 0; i < suits.Length; i++)
+            foreach (var suit in suits)
             {
-                for (var j = 0; j < value.Length; j++)
-                {
-                    var card = new Card(suits[i], value[j]);
-                    deck.Add(card);
-                }
+                deck.AddRange(value.Select(cardValue => new Card(suit, cardValue)));
             }
             return deck;
         }
@@ -46,17 +38,28 @@ namespace CodeKata
             }
         }
 
-        public List<Card> DealToPlayers(List<Card> deck, int numberOfPlayers)
+        public List<Card> DealHand(List<Card> deck, int cardsPerHand)
         {
-            throw new NotImplementedException();
+            var hand = new List<Card>();
+            for (var i = 0; i < cardsPerHand; i++)
+            {
+                var takenCard = TakeCard(deck);
+                hand.Add(takenCard);
+            }
+            return hand;
         }
 
         public Card TakeCard(List<Card> deck)
         {
-            throw new NotImplementedException();
+            var yourCard = new Card(deck[0].GetSuit(), deck[0].GetValue());
+            deck.RemoveAt(0);
+            return yourCard;
         }
 
-
+        public void ReturnCardsFromHandToDeck(List<Card> hand, List<Card> deck)
+        {
+            throw new NotImplementedException();
+        }
     }
 
     public class Card

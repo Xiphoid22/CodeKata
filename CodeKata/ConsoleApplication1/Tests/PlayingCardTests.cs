@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace CodeKata.Tests
@@ -45,6 +40,14 @@ namespace CodeKata.Tests
             var originalDeck = _cards.CreateDeck();
             _cards.ShuffleDeck(_deck);
             Assert.IsTrue(originalDeck[0].GetValue() != _deck[0].GetValue());
+        }
+
+        [Test]
+        public void GetHand()
+        {
+            _cards.ShuffleDeck(_deck);
+            var hand = _cards.DealHand(_deck, 7);
+            Assert.IsTrue(hand.Count == 7);
         }
     }
 }
