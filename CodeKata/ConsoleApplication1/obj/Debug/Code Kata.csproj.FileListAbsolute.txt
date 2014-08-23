@@ -5,4 +5,3 @@ C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\CodeKata.dll
 C:\Source\Code Kata\CodeKata\ConsoleApplication1\bin\Debug\CodeKata.pdb
 C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\CodeKata.dll
 C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\CodeKata.pdb
-C:\Source\Code Kata\CodeKata\ConsoleApplication1\obj\Debug\Code Kata.csprojResolveAssemblyReference.cache

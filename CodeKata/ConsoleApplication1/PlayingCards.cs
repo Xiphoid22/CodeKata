@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 
 namespace CodeKata
 {
@@ -41,12 +42,20 @@ namespace CodeKata
         public List<Card> DealHand(List<Card> deck, int cardsPerHand)
         {
             var hand = new List<Card>();
-            for (var i = 0; i < cardsPerHand; i++)
+            try
             {
-                var takenCard = TakeCard(deck);
-                hand.Add(takenCard);
+                for (var i = 0; i < cardsPerHand; i++)
+                {
+                    var takenCard = TakeCard(deck);
+                    hand.Add(takenCard);
+                }
+                return hand;
             }
-            return hand;
+            catch (ArgumentOutOfRangeException)
+            {
+                return hand;
+            }
+
         }
 
         public Card TakeCard(List<Card> deck)
@@ -58,7 +67,8 @@ namespace CodeKata
 
         public void ReturnCardsFromHandToDeck(List<Card> hand, List<Card> deck)
         {
-            throw new NotImplementedException();
+            deck.AddRange(hand);
+            hand.Clear();
         }
     }
 
