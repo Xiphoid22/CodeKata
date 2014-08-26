@@ -48,5 +48,19 @@ namespace CodeKata.Tests
             var result = _stringCalculatorKata.Add("1,5,17,-10,11,-4");
             Assert.AreEqual(result, 20);
         }
+
+        [Test]
+        public void CommasOrNewLineDelimiter()
+        {
+            var result = _stringCalculatorKata.Add("1\n5,17,-10\n11\n-4");
+            Assert.AreEqual(result, 20);
+        }
+
+        [Test]
+        public void NewLineDelimiter()
+        {
+            var result = _stringCalculatorKata.Add("\n1\n5\n17\n-10\n11\n-4");
+            Assert.AreEqual(result, 20);
+        }
     }
 }

@@ -7,7 +7,8 @@ namespace CodeKata
     {
         public int Add(string numbers)
         {
-            var splitNumbers = numbers.Split(',');
+            var delimiters = new string[] {",","\n"};
+            var splitNumbers = numbers.Split(delimiters,StringSplitOptions.RemoveEmptyEntries);
 
             try
             {
