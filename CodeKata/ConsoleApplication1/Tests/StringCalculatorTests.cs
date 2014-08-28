@@ -62,5 +62,26 @@ namespace CodeKata.Tests
             var result = _stringCalculatorKata.Add("\n1\n5\n17\n-10\n11\n-4");
             Assert.AreEqual(result, 20);
         }
+
+        [Test]
+        public void CustomDelimiter()
+        {
+            var result = _stringCalculatorKata.Add("//;\n1;2");
+            Assert.AreEqual(result, 3);
+        }
+
+        [Test]
+        public void CustomnDelimiter()
+        {
+            var result = _stringCalculatorKata.Add("//n\n1n2n3");
+            Assert.AreEqual(result, 6);
+        }
+
+        [Test]
+        public void CustomSlashDelimiter()
+        {
+            var result = _stringCalculatorKata.Add("//\\\n1\\2\\3");
+            Assert.AreEqual(result, 6);
+        }
     }
 }
