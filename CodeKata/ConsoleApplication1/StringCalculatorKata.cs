@@ -8,13 +8,9 @@ namespace CodeKata
     {
         private string _numbers;
 
-        public StringCalculatorKata(string numbers)
+        public int Add(string numbers)
         {
             _numbers = numbers;
-        }
-
-        public int Add()
-        {
             var delimiters = SetDelimiters();
             var splitNumbers = _numbers.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
             CheckForNegativeNumbers(splitNumbers);
